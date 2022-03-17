@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <!--link to css-->
+    <link rel="stylesheet" href="style.css">
+    <!--link to Box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!--head-->
+    <header>
+        <!--nav-->
+        <nav class="container">
+            <!--logo-->
+            <a href="#" class="logo">E-Commerce</a>
+            <!--Cart Icon-->
+            <i class='bx bx-cart'  id="cart-icon"></i>
+            <!--Cart-->
+            <div class="cart">
+                <h2 align="center">Your Cart</h2>
+                <!--Cart Content-->
+                <div class="cart-content">
+                    <div class="cart-box none">
+                        <img src="" alt="" class="cart-img">
+                        <div class="detail-cart">
+                            <div class="cart-product-name"></div>
+                            <span class="cart-price"></span> &nbsp;&nbsp;&nbsp;
+                            <input type="number"  class="quantity" onblur="totle()">
+                        </div>
+                        <div class="remove">
+                            <i class='bx bx-trash' id="cart-remove" onclick="removeButton()"></i>
+                        </div>
+                    </div>
+                </div>
+                <!--totle-->
+                <div class="totle">
+                    <div class="totle-title">
+                        totle
+                    </div>
+                    <div class="totle-price">0 $ </div>
+                </div>
+                <!--Buy Button-->
+                <button class="btn-buy">Buy Now</button>
+                <!--close-->
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- shoping section-->
+    <section class="first container">
+        <!--section title-->
+        <h2 class="title">Products</h2>
+        <!--content-->
+        <div class="shop-content">
+            <!--box 1-->
+            <div class="product-box">
+                <img src="img/product1.jpg" alt="">
+                <h2 class="product-name"> SHIRT</h2>
+                <span>25 $ </span>
+                <i class='bx bx-cart' id="0" onclick="addCart(this.id)" id="add-cart" ></i>
+            </div>
+             <!--box 2-->
+             <div class="product-box">
+                <img src="img/product2.jpg" alt="">
+                <h2 class="product-name"> Air</h2>
+                <span>25 $ </span>
+                <i class='bx bx-cart' id="1" onclick="addCart(this.id)" id=""></i>
+            </div>
+             <!--box 3-->
+             <div class="product-box">
+                <img src="img/product3.jpg" alt="">
+                <h2 class="product-name"> OutFit</h2>
+                <span>100 $ </span>
+                <i class='bx bx-cart' id="2" onclick="addCart(this.id)" id=""></i>
+            </div>
+             <!--box 4-->
+             <div class="product-box">
+                <img src="img/product4.jpg" alt="">
+                <h2 class="product-name"> SHIRT</h2>
+                <span>25 $ </span>
+                <i class='bx bx-cart' id="3" onclick="addCart(this.id)" id=""></i>
+            </div>
+             <!--box 5-->
+             <div class="product-box">
+                <img src="img/product5.jpg" alt="">
+                <h2 class="product-name"> SHIRT</h2>
+                <span>25 $ </span>
+                <i class='bx bx-cart' id="4" onclick="addCart(this.id)" id=""></i>
+            </div>
+             <!--box 6-->
+             <div class="product-box">
+                <img src="img/product6.jpg" alt="">
+                <h2 class="product-name"> SHIRT</h2>
+                <span>25 $ </span>
+                <i class='bx bx-cart' id="5" onclick="addCart(this.id)" id=""></i>
+            </div>
+             <!--box 7-->
+             <div class="product-box">
+                <img src="img/product7.jpg" alt="">
+                <h2 class="product-name"> SHIRT</h2>
+                <span>25 $ </span>
+                <i class='bx bx-cart' id="6" onclick="addCart(this.id)" id=""></i>
+            </div>
+             <!--box 8-->
+             <div class="product-box">
+                <img src="img/product8.jpg" alt="">
+                <h2 class="product-name"> SHIRT</h2>
+                <span>25 $ </span>
+                <i class='bx bx-cart' id="8" onclick="addCart(this.id)" id=""></i>
+            </div>
+            
+        </div>
+    </section> 
+
+    <script src="main.js"></script>
+</body>
+</html>
